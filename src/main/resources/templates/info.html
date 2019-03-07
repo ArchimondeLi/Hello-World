@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	
+	提示信息：<p th:if="${msg!=null}" th:text="${msg}"></p>
+	
+	<script type="text/javascript" src="./static/js/jquery.2.1.4.min.js"></script>
+	<script th:inline="javascript">
+		$(function(){
+			setTimeout(function () { 
+				back();
+			}, 2000); 
+		});
+		
+		//显示导航栏信息
+		function showBar(){
+			window.location.href = "http://fbclient/showNavigationBar";
+		}
+		
+		//隐藏导航栏信息
+		function hiddenBar(){
+			window.location.href = "http://fbclient/hideNavigationBar";
+		}
+		
+		//改变导航栏背景色 w 为白色，b 为黑色
+		function changeStyle(param){
+			window.location.href = "http://fbclient/changeStatusStyle/"+param;
+		}
+		
+		//分享
+		/* 参数 param 格式为 p1/p2/p3/p4/p5.
+			p1:分享类型：你们这只是链接 就写 lnk
+			p2:分享标题
+			p3：分享描述
+			p4:分享链接
+			p5：分享缩略图
+			每个参数做下 decodeURICo */
+		/* function share(){
+			var shareType = encodeURIComponent("lnk");
+			var shareTitle = encodeURIComponent("测试");
+			var shareDesc = encodeURIComponent("抽奖活动测试");
+			var shareUrl = encodeURIComponent("http://www.baidu.com");
+			var shareImg = encodeURIComponent("http://thirdwx.qlogo.cn/mmopen/vi_32/DYAIOgq83epIMwPE6FwsiceLxN1wx41m1RKuLLBUj09yvIggxdu0GCxyFPiaqBWtMOvDQbQbk5HVWYqvN9VLB0fQ/132");
+			var param=shareType+"/"+shareTitle+"/"+shareDesc+"/"+shareUrl+"/"+shareImg;
+			window.location.href = "http://fbclient/shareToThirdPlatform/"+param;
+		}   */
+		
+		//返回首页
+		function toIndex(){
+			//alert("返回首页")
+			window.location.href = "http://fbclient/popToRoot";
+		}
+		
+		//返回上一页
+		function back(){
+			alert("重新登录")
+			window.location.href = "http://fbclient/tool";
+		}
+	</script>
+</body>
+</html>

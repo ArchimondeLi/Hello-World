@@ -1,0 +1,368 @@
+html,
+body {
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	background-image: url(../img/pigrain_bg.png);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+
+.top:after {
+	display: block;
+	clear: both;
+	content: "";
+	visibility: hidden;
+	height: 0
+}
+
+.top {
+	width: 100%;
+	height: 1rem;
+	line-height: 1rem;
+	text-align: center;
+	font-family: SourceHanSansCN-Normal Normal;
+	font-size: 0.44rem;
+	font-weight: bold;
+	letter-spacing: 4px;
+	color: #fff;
+	zoom: 1;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+}
+
+.top img {
+	display: block;
+	position: absolute;
+	top: 0.28rem;
+	left: 0.2rem;
+	width: 0.3rem;
+}
+
+.top_big {
+	display: inline-block;
+	width: 0.5rem;
+	height: 0.5rem;
+	background: url(../img/top_pig.png) no-repeat;
+	background-size: 100%;
+	vertical-align: middle;
+	margin-right: 0.2rem;
+	margin-bottom: 0.1rem;
+}
+.pigrain_bg1 {
+	display: block;
+	width: 100%;
+	margin-top: -1rem;
+}
+
+.shoupeng {
+	display: none;
+	width: 44%;
+	margin: auto;
+	position: absolute;
+	bottom:-0.8rem;
+	left: 50%;
+	margin-left: -22%;
+}
+
+.pk {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	top: -300px;
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+	transform: translate3d(0, 0, 0);
+	-webkit-transform: translate3d(0, 0, 0);
+}
+
+.pk1 {
+	background-image: url(../img/1.gif);
+}
+
+.pk2 {
+	background-image: url(../img/2.gif);
+}
+
+.pk3 {
+	background-image: url(../img/3.gif);
+}
+
+.pk4 {
+	background-image: url(../img/4.gif);
+}
+
+.pk5 {
+	background-image: url(../img/5.gif);
+}
+
+.pk6 {
+	background-image: url(../img/6.gif);
+}
+
+.pk7 {
+	background-image: url(../img/7.gif);
+}
+
+.pk8 {
+	background-image: url(../img/8.gif);
+}
+
+.pk9 {
+	background-image: url(../img/9.gif);
+}
+
+.boom {
+
+	position: absolute;
+	/* width: 70px;
+	height: 70px; */
+	top: -300px;
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+	transform: translate3d(0, 0, 0);
+	-webkit-transform: translate3d(0, 0, 0);
+
+
+	width: 100px;
+	height: 100px;
+	/* background-image: url(../img/5.gif); */
+}
+
+.disappear {
+	background-image: url(../img/dis.png);
+	animation-timing-function: linear;
+	transform-origin: bottom center;
+	animation-name: fadeOut;
+	animation-duration: 300ms;
+}
+
+.times {
+	padding-top: 1.2rem;
+	text-align: center;
+	font-size: 0.36rem;
+	color: #FFEF3E;
+}
+
+.times_p {
+	font-size: 0.3rem;
+	padding-bottom: 0.1rem;
+}
+
+.p3play {
+	display: none;
+}
+
+/* 中奖下落 */
+.doing {
+	-webkit-animation: 'roll' 1500ms forwards;
+	animation: 'roll' 1500ms forwards;
+}
+
+@keyframes roll {
+	0% {
+		top: 2rem;
+	}
+
+	100% {
+		top: 70%;
+	}
+}
+
+@-webkit-keyframes roll {
+	0% {
+		top: 2rem;
+	}
+
+	100% {
+		top: 70%;
+	}
+}
+
+/* 中奖下落 */
+
+
+/* 疯狂动画START */
+
+
+
+/* 旋转下落 */
+@keyframes spin3DX {
+
+	0% {
+		transform: rotateY(90deg);
+		top: 2%;
+	}
+
+	20% {
+		transform: rotateY(180deg);
+		top: 20%
+	}
+
+	40% {
+		transform: rotateY(270deg);
+		top: 40%;
+	}
+
+	60% {
+		transform: rotateY(360deg);
+		top: 60%;
+	}
+
+	80% {
+		top: 80%;
+		transform: rotateY(450deg);
+    }
+    
+    
+    100%{
+        top: 100%;
+        display: none;
+		transform: rotateY(540deg) scale(0);
+    }
+
+}
+
+.spin3DX {
+	animation-timing-function: linear;
+	transform-origin: bottom center;
+	animation-name: spin3DX;
+	animation-duration: 2000ms;
+	animation-fill-mode: forwards;
+}
+
+
+
+@keyframes spin3DY {
+
+	0% {
+		transform: rotateX(0deg); 
+		top: -10%;
+	}
+
+	12.5% {
+		 transform: rotateX(90deg); 
+		top: 20%;
+	}
+
+	25% {
+		 transform: rotateX(180deg); 
+		top: 30%;
+	}
+
+	37.5% {
+		 transform: rotateX(270deg); 
+		top: 40%;
+	}
+
+	50% {
+		 transform: rotateX(360deg); 
+		top: 50%;
+	}
+
+	62.5% {
+		 transform: rotateX(450deg); 
+		top: 60%;
+	}
+
+	75% {
+		 transform: rotateX(540deg); 
+		top: 70%;
+	}
+	87.5% {
+		 transform: rotateX(630deg); 
+		top: 80%;
+	}
+
+	100% {
+         transform: rotateX(720deg); 
+         top: 100%;
+         opacity:1;
+	}
+	
+	100% {
+         transform: rotateX(720deg) scale(0); 
+         top: 100%;
+         display: none;
+         opacity:0;
+	}
+
+}
+
+.spin3DY {
+	animation-timing-function: linear;
+	transform-origin: bottom center;
+	animation-name: spin3DY;
+	animation-duration: 2000ms;
+	animation-fill-mode: forwards;
+}
+
+
+/* 遮罩层 */
+
+.alert_bg {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: rgba(0, 0, 0, 0.5);
+	z-index: 999;
+	display: none;
+}
+
+/* 载入层 */
+
+.tip_bg {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background-image: url(../img/pigrain_bg.png);
+	z-index: 999;
+}
+
+.loading{
+	position: absolute;
+	display: block;
+	top: 30%;
+	left: 15%;
+	width: 70%;
+}
+
+.loading2{
+	position: absolute;
+	display: block;
+	top: 40%;
+	left: 25%;
+	width: 50%;
+}
+
+.loading_btn{
+	position: absolute;
+	display: block;
+	top: 60%;
+	left: 35%;
+	width: 30%;
+	animation: fade_btn 3000ms forwards;
+}
+
+@keyframes fade_btn{
+	0%{
+		opacity: 0;
+	}
+	90%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+

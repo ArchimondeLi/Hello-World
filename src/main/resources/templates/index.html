@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	Hello  index!
+	<button onclick="share()">点击分享</button>
+	<script type="text/javascript" src="./static/js/jquery.2.1.4.min.js"></script>
+	<script th:inline="javascript">
+	
+	    /* 参数 param 格式为 p1/p2/p3/p4/p5.
+		p1:分享类型：你们这只是链接 就写 lnk
+		p2:分享标题
+		p3：分享描述
+		p4:分享链接
+		p5：分享缩略图
+		每个参数做下 decodeURICo */
+		/*<![CDATA[*/
+		var shareType = encodeURIComponent("pic");//pic、lnk
+	    var shareTitle = encodeURIComponent("");
+	    var shareDesc = encodeURIComponent("");
+	    var shareUrl = encodeURIComponent([[${share.url}]]);
+	    var shareImg = encodeURIComponent("");
+	    var param=shareType+"/"+shareTitle+"/"+shareDesc+"/"+shareUrl+"/"+shareImg;
+	    /*]]>*/
+	
+		$(function(){
+			hiddenBar();
+			window.location.href = "http://192.168.200.44:8888/cmbenterprise/pig/pigRain";
+		});
+		
+		function goTo(){
+			window.location.href = "http://hmrjhsk2.picp.net/cmbenterprise/example/getUsers";
+		}
+		
+		//显示导航栏信息
+		function showBar(){
+			window.location.href = "http://fbclient/showNavigationBar";
+		}
+		
+		//隐藏导航栏信息
+		function hiddenBar(){
+			window.location.href = "http://fbclient/hideNavigationBar";
+		}
+		
+		//分享成功回调函数
+		function shareSuccess(){
+			alert("分享成功")
+		}
+		
+		//分享
+		function share(){
+			window.location.href = "http://fbclient/shareToThirdPlatform/"+param;
+		}
+	</script>
+</body>
+</html>

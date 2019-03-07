@@ -1,0 +1,196 @@
+.box {
+	width: 100%;
+	font-size: 0.3rem;
+	position: relative;
+	overflow: hidden;
+}
+
+.top:after {
+	display: block;
+	clear: both;
+	content: "";
+	visibility: hidden;
+	height: 0
+}
+
+.top {
+	width: 100%;
+	height: 1rem;
+	line-height: 1rem;
+	text-align: center;
+	font-family: SourceHanSansCN-Normal Normal;
+	font-size: 0.44rem;
+	font-weight: bold;
+	letter-spacing: 4px;
+	color: #fff;
+	zoom: 1;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+}
+
+.top img {
+	display: block;
+	position: absolute;
+	top: 0.28rem;
+	left: 0.2rem;
+	width: 0.3rem;
+}
+
+.top_big {
+	display: inline-block;
+	width: 0.5rem;
+	height: 0.5rem;
+	background: url(../img/top_pig.png) no-repeat;
+	background-size: 100%;
+	vertical-align: middle;
+	margin-right: 0.2rem;
+	margin-bottom: 0.1rem;
+}
+
+.bg_1 {
+	display: block;
+	width: 100%;
+}
+
+.content {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.img_1 {
+	display: block;
+	width: 100%;
+}
+
+.xinxin {
+	display: block;
+	width: 100%;
+	position: absolute;
+	top: 4.6rem;
+	left: 0;
+}
+
+.liuxin_box {
+	width: 200%;
+	position: absolute;
+	top: -1rem;
+	left: 0;
+	overflow: hidden;
+}
+
+.liuxin {
+	display: block;
+	width: 50%;
+}
+
+.liuxins {
+	margin-left: 50%;
+}
+
+.btn_start {
+	display: block;
+	width: 40%;
+	margin: auto;
+	margin-top: 0.4rem;
+}
+
+.content_p {
+	width: 100%;
+	font-size: 0.32rem;
+	text-align: center;
+	color: #FCDC61;
+	margin-top: 0.6rem;
+	padding-bottom: 0.1rem;
+}
+
+.content_p1 {
+	width: 90%;
+	margin: auto;
+	font-size: 0.28rem;
+	color: #FCDC61;
+	line-height: 1.6;
+}
+
+.logo1 {
+	display: block;
+	width: 46%;
+	position: absolute;
+	bottom: 0.6rem;
+	left: 50%;
+	margin-left: -23%;
+}
+
+.index_ce {
+	display: block;
+	width: 10%;
+	position: fixed;
+	top: 30%;
+	right: 0;
+	z-index: 999;
+}
+
+.floater {
+	animation-name: floater;
+	-webkit-animation-name: floater;
+	animation-duration: 1.5s;
+	-webkit-animation-duration: 1.5s;
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+	visibility: visible !important;
+}
+
+@
+keyframes floater { 0% {
+	transform: translateY(0%);
+}
+
+50%
+{
+transform
+:
+ 
+translateY
+(8%);
+
+	
+}
+100%
+{
+transform
+:
+ 
+translateY
+(0%);
+
+	
+}
+}
+@
+-webkit-keyframes floater { 0% {
+	-webkit-transform: translateY(0%);
+}
+50%
+{
+-webkit-transform
+:
+ 
+translateY
+(8%);
+
+	
+}
+100%
+{
+-webkit-transform
+:
+ 
+translateY
+(0%);
+
+	
+}
+}

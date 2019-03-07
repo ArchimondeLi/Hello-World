@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	Hello  <span th:text="${map.name}"></span>!<br>
+	traceId:<span th:text="${map.traceId}"></span>
+	<script type="text/javascript" src="../static/js/jquery.2.1.4.min.js"></script>
+	<script th:inline="javascript">
+		/*<![CDATA[*/
+	    var test = [[${map.age}]];
+		var traceId = [[${map.traceId}]]
+	    /*]]>*/
+	
+		$(function(){
+			console.log(test)
+			console.log(traceId)
+		});
+	</script>
+</body>
+</html>

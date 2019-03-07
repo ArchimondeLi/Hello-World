@@ -1,0 +1,231 @@
+.box {
+    width: 100%;
+    font-size: 0.3rem;
+    position: relative;
+}
+
+.top:after {
+	display: block;
+	clear: both;
+	content: "";
+	visibility: hidden;
+	height: 0
+}
+
+.top {
+	width: 100%;
+	height: 1rem;
+	line-height: 1rem;
+	text-align: center;
+	font-family: SourceHanSansCN-Normal Normal;
+	font-size: 0.44rem;
+	font-weight: bold;
+	letter-spacing: 4px;
+	background:#fff;
+	color: #333;
+	zoom: 1;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+}
+
+.top img {
+	display: block;
+	position: absolute;
+	top: 0.28rem;
+	left: 0.2rem;
+	width: 0.3rem;
+}
+
+.top_big {
+	display: inline-block;
+	width: 0.5rem;
+	height: 0.5rem;
+	background: url(../img/top_pig.png) no-repeat;
+	background-size: 100%;
+	vertical-align: middle;
+	margin-right: 0.2rem;
+	margin-bottom: 0.1rem;
+}
+.poster_bg {
+    display: block;
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+    position: absolute;
+    top: 1rem;
+    left: 0;
+}
+
+.poster_top {
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.poster_bottom {
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.poster_logo {
+    display: block;
+    width: 40%;
+    position: absolute;
+    top: 6%;
+    left: 50%;
+    margin-left: -20%;
+}
+
+.poster_img1 {
+    display: block;
+    width: 96%;
+    position: absolute;
+    top: 13%;
+    left: 50%;
+    margin-left: -48%;
+}
+
+.poster_1 {
+    display: block;
+    width: 36%;
+    position: absolute;
+    top: 84%;
+    left: 50%;
+    margin-left: -18%;
+}
+
+.poster_p {
+    width: 90%;
+    text-align: center;
+    font-size: 0.28rem;
+    color: #333;
+    padding: 0.05rem;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, .8);;
+    position: absolute;
+    top: 92%;
+    left: 50%;
+    margin-left: -45%;
+}
+
+
+
+.poster_p_span {
+    color: #F33926;
+    text-decoration: underline;
+    font-size: 0.32rem;
+    font-weight: bold;
+}
+
+.poster_p_spans {
+    color: #F33926;
+}
+
+/* 弹窗 */
+.mg {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    display: none;
+}
+
+.mg_box {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.poster1_imgss {
+    position: relative;
+}
+
+.poster1_img {
+    display: block;
+    width: 70%;
+    margin: auto;
+    padding-top: 30%;
+}
+
+.fenxiang {
+    width: 0.8rem;
+    height: 0.8rem;
+    font-size: 0.24rem;
+    background: #FDCF3E;
+    color: #F43926;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 0.8rem;
+    position: absolute;
+    bottom: -3%;
+    left: 10%;
+}
+
+.shoupeng3 {
+    display: block;
+    width: 10%;
+    position: absolute;
+    top: 10%;
+    right: 8%;
+}
+
+.heartbeat {
+    -webkit-animation: heartbeat 8s;
+    animation: heartbeat 8s;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+@keyframes heartbeat {
+
+    0%,
+    20%,
+    40%,
+    60%,
+    80%,
+    100% {
+        transform: scale(1);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: scale(1.15);
+    }
+}
+
+@-webkit-keyframes heartbeat {
+
+    0%,
+    20%,
+    40%,
+    60%,
+    80%,
+    100% {
+        -webkit-transform: scale(1);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: scale(1.15);
+    }
+}

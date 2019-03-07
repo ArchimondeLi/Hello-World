@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+div,
+ul,
+li,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea,
+select,
+p,
+dl,
+dt,
+dd,
+a,
+img,
+button,
+form,
+table,
+th,
+tr,
+td,
+tbody,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    font: 100px 'Microsoft YaHei', '宋体', Tahoma, Arial, sans-serif;
+    width: 100%;
+}
+
+em,
+i {
+    font-style: normal;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+strong {
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+    color: #969696;
+    font-family: 'Microsoft YaHei', Tahoma, Arial, sans-serif;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+input,
+button {
+    display: block;
+    outline: 0;
+}
+
+a,
+input,
+label {
+    -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+}
+
+
+#alertbox {
+	width: 65%;
+	height: 2.2rem;
+	background-color: rgb(248, 248, 248);
+	position: absolute;
+	top: 42%;
+	left: 20%;
+	word-wrap: break-word;
+	font-size: 16px;
+	font-weight: bold;
+	z-index: 999;
+	text-align: center;
+	border-radius: 0.3rem;
+	line-height: 1.2rem;
+}
+
+#alertbutton {
+	border: 0px solid rgb(204, 204, 204);
+	background-color: rgb(255, 255, 255);
+	width: 100%;
+	color: #61a7ea;
+	height: 1rem;
+	font-weight: normal;
+	text-align: center;
+	line-height: 1rem;
+	outline: none;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	border-bottom-right-radius: 0.3rem;
+	border-bottom-left-radius: 0.3rem;
+}
+
+#backg {
+	top: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #000000;
+	opacity: 0.3;
+	overflow: hidden;
+}

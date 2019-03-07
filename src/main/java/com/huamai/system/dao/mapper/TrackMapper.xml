@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.huamai.system.dao.TrackMapper">
+
+	<insert id="bulkInsert" parameterType="map">
+		insert into tab_platform_log (activity_code,
+		customer_code, trace_id, ip, trace_desc ,
+		visit_time, leave_time, ex_goods_code, ex_activity_code) values
+		<foreach collection="map" separator="," item="item">
+			(#{item.activityCode,jdbcType=VARCHAR},
+			#{item.customerCode,jdbcType=VARCHAR},
+			#{item.traceId,jdbcType=VARCHAR}, 
+			#{item.ip,jdbcType=VARCHAR},
+			#{item.traceDesc,jdbcType=VARCHAR},
+			#{item.visitTime,jdbcType=VARCHAR},
+			#{item.leaveTime,jdbcType=VARCHAR},
+			#{item.exGoodsCode,jdbcType=VARCHAR},
+			#{item.exActivityCode,jdbcType=VARCHAR})
+		</foreach>
+	</insert>
+
+	<update id="updateLeaveTime" parameterType="map">
+		update tab_platform_log set leave_time =
+		<foreach collection="map" index="key" open="case trace_id"
+			close="end" separator=" " item="leave">
+			when #{key} then #{leave}
+		</foreach>
+		where trace_id in
+		<foreach collection="map" index="key" open="(" close=")"
+			separator="," item="item">
+			#{key}
+		</foreach>
+	</update>
+
+</mapper>

@@ -1,0 +1,144 @@
+html,
+body {
+    background: #FE443B;
+}
+
+.box {
+    width: 100%;
+    font-size: 0.3rem;
+    position: relative;
+}
+
+.top:after {
+	display: block;
+	clear: both;
+	content: "";
+	visibility: hidden;
+	height: 0
+}
+
+.top {
+	width: 100%;
+	height: 1rem;
+	line-height: 1rem;
+	text-align: center;
+	font-family: SourceHanSansCN-Normal Normal;
+	font-size: 0.44rem;
+	font-weight: bold;
+	letter-spacing: 4px;
+	background:#fff;
+	color: #333;
+	zoom: 1;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+}
+
+.top img {
+	display: block;
+	position: absolute;
+	top: 0.28rem;
+	left: 0.2rem;
+	width: 0.3rem;
+}
+
+.top_big {
+	display: inline-block;
+	width: 0.5rem;
+	height: 0.5rem;
+	background: url(../img/top_pig.png) no-repeat;
+	background-size: 100%;
+	vertical-align: middle;
+	margin-right: 0.2rem;
+	margin-bottom: 0.1rem;
+}
+.content {
+    width: 100%;
+    position: absolute;
+    top: 13%;
+    left: 50%;
+    margin-left: -50%;
+    padding-bottom: 0.6rem;
+}
+
+.myprize_bg {
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.myprize_lanterm {
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 3%;
+    left: 0;
+    z-index: 99;
+}
+
+.content_nav {
+    width: 88%;
+    margin: auto;
+    background: #FBE195;
+    border-radius: 0.2rem;
+    padding: 0.6rem 0;
+}
+
+.content_nav_p {
+    width: 100%;
+    text-align: center;
+    color: #F42E08;
+    font-size: 0.45rem;
+    padding-bottom: 0.4rem;
+}
+
+.content_navs {
+    width: 84%;
+    margin: auto;
+    background: #fff;
+    border-radius: 0.1rem;
+    margin-bottom: 0.2rem;
+    padding-bottom: 0.2rem;
+}
+
+.content_navs_top {
+    border-bottom: 1px dashed #999;
+}
+
+.content_navs_top_p {
+    font-size: 0.3rem;
+    color: #FF3E23;
+    padding: 0.3rem 0.2rem;
+    box-sizing: border-box;
+}
+
+.content_navs_top_p1 {
+    font-size: 0.28rem;
+    text-align: center;
+    color: #666;
+    padding-bottom: 0.2rem;
+}
+
+.content_navs_top_img {
+    display: block;
+    width: 46%;
+    margin: auto;
+    padding-bottom: 0.3rem;
+}
+
+.content_navs_bottom {
+    font-size: 0.28rem;
+    color: #666;
+}
+
+.content_navs_bottom_p {
+    padding: 0.2rem 0.2rem 0.1rem;
+    box-sizing: border-box;
+}
+
+.content_navs_bottom_p1 {
+    padding: 0 0.2rem;
+    box-sizing: border-box;
+    line-height: 1.6;
+}
