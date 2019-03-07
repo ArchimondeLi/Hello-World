@@ -1,0 +1,69 @@
+# 本文件是用来为java类项目新建.gitignore的，可以直接用于新项目`
+#Manven
+/target/
+!.mvn/wrapper/maven-wrapper.jar
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/build/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# Eclipse
+.settings/
+.buildpath
+.classpath
+.project
+
+# Linux
+# backup files
+*~
+
+# Windows thumbnails
+Thumbs.db
+
+# Mac OS X
+.DS_Store
+# thumbnails
+._*
+
+# GIT
+.git/
+
+# Java
+*.class
+# packages
+*.jar
+*.war
+*.ear
+
+# Logging
+*.log
+logs/
+*.swp
+*.bak
+
+# jME (binaries)
+*.so`
+
+# Build
+out
+build
+bin
